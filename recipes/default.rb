@@ -16,3 +16,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+include_recipe 'zookeeper'
+
+node_id = node["zip_zookeeper"]["myid"]
+
+file '/var/lib/zookeeper/myid' do
+  content "#{node_id}"
+end
+
+#include_recipe 'zookeeper::service'
+
