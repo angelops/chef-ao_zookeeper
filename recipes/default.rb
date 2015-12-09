@@ -25,5 +25,5 @@ file '/var/lib/zookeeper/myid' do
   content "#{node_id}"
 end
 
-#include_recipe 'zookeeper::service'
+include_recipe 'zookeeper::service'
 
