@@ -7,5 +7,5 @@ node.default["zookeeper"]["user_home"] = '/srv/zookeeper'
 node.default["zookeeper"]["mirror"] = 'http://apache.mirrors.tds.net/zookeeper/'
 default[:zip_zookeeper][:zk_cleanup_keep_count] = 3
 default[:zip_zookeeper][:cron_cleanup_hour] = 12
-default[:zip_zookeeper][:cron_cleanup_minute] = 0
+default[:zip_zookeeper][:cron_cleanup_minute] = 5
 
