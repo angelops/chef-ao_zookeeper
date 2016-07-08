@@ -35,6 +35,6 @@ include_recipe 'zookeeper::service'
 cron 'zkCleanup.sh' do
   hour node[:zip_zookeeper][:cron_cleanup_hour]
   minute node[:zip_zookeeper][:cron_cleanup_minute]
-  command "#{zk_install_dir}/zookeeper-#{zk_version}/bin/zkCleanup.sh #{zk_data_home} -n #{zk_cleanup_keep_count}"
+  command "#{zk_install_dir}/bin/zkCleanup.sh #{zk_data_home} -n #{zk_cleanup_keep_count}"
 end
 
