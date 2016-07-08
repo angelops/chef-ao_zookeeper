@@ -21,9 +21,20 @@ include_recipe 'zookeeper'
 
 node_id = node["zip_zookeeper"]["myid"]
 
-file '/var/lib/zookeeper/myid' do
+zk_data_home = node[:zookeeper][:config][:dataDir]
+zk_install_dir = node[:zookeeper][:install_dir]
+zk_version = node[:zookeeper][:version]
+zk_cleanup_keep_count = node[:zip_zookeeper][:cleanup_keep_count]
+
+file "#{zk_data_home}/myid" do
   content "#{node_id}"
 end
 
 include_recipe 'zookeeper::service'
+
+cron 'zkCleanup.sh' do
+  minute 0
+  hour 0
+  command "#{zk_install_dir}/zookeeper/zookeeper-#{zk_version}/bin/zkCleanup.sh #{zk_data_home} -n #{zk_cleanup_keep_count}"
+end
 
