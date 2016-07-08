@@ -6,3 +6,6 @@ node.default["zookeeper"]["checksum"] = '01b3938547cd620dc4c93efe07c0360411f4a66
 node.default["zookeeper"]["user_home"] = '/srv/zookeeper'
 node.default["zookeeper"]["mirror"] = 'http://apache.mirrors.tds.net/zookeeper/'
 default[:zip_zookeeper][:zk_cleanup_keep_count] = 3
+default[:zip_zookeeper][:cron_cleanup_hour] = 12
+default[:zip_zookeeper][:cron_cleanup_minute] = 0
+
