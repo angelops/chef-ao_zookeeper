@@ -1,3 +1,3 @@
 # 0.1.0
 
-Initial release of zip_zookeeper
+Initial release of ao_zookeeper

@@ -13,5 +13,5 @@ platforms:
 suites:
   - name: default
     run_list:
-     - recipe[zip_zookeeper::default]
+     - recipe[ao_zookeeper::default]
     attributes:

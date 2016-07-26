@@ -84,7 +84,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     }
 
     chef.run_list = [
-      'recipe[zip_zookeeper::default]'
+      'recipe[ao_zookeeper::default]'
     ]
   end
 end

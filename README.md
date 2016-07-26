@@ -1,4 +1,4 @@
-# zip_zookeeper-cookbook
+# ao_zookeeper-cookbook
 
 TODO: Enter the cookbook description here.
 
@@ -16,7 +16,7 @@ TODO: List your supported platforms.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['zip_zookeeper']['bacon']</tt></td>
+    <td><tt>['ao_zookeeper']['bacon']</tt></td>
     <td>Boolean</td>
     <td>whether to include bacon</td>
     <td><tt>true</tt></td>
@@ -25,14 +25,14 @@ TODO: List your supported platforms.
 
 ## Usage
 
-### zip_zookeeper::default
+### ao_zookeeper::default
 
-Include `zip_zookeeper` in your node's `run_list`:
+Include `ao_zookeeper` in your node's `run_list`:
 
 ```json
 {
   "run_list": [
-    "recipe[zip_zookeeper::default]"
+    "recipe[ao_zookeeper::default]"
   ]
 }
 ```

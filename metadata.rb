@@ -1,9 +1,9 @@
-name             'zip_zookeeper'
+name             'ao_zookeeper'
 maintainer       'Justin Alan Ryan (ZipRealty / Realogy)'
 maintainer_email 'juryan@ziprealty.com'
 license          'Apache 2.0'
-description      'Installs/Configures zip_zookeeper'
-long_description 'Installs/Configures zip_zookeeper'
+description      'Installs/Configures ao_zookeeper'
+long_description 'Installs/Configures ao_zookeeper'
 version          '0.1.16'
 
 depends 'java'
